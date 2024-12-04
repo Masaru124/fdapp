@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Register</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Pizza Delivery</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="/admin/">Admin Login</a></li>
+                <li><a href="{% url 'user_login' %}">User Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h3>Enter email id to change password</h3>
+        <form action="">
+            <label for="email">Enter your email :</label>
+            <input type="email"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pizza Delivery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

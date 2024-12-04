@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Pizza Delivery</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="/admin/">Admin Login</a></li>
+          <li><a href="{% url 'user_login' %}">User Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section (Swiggy-style) -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Delicious Pizza Delivered to Your Door!</h2>
+        <p>Freshly baked pizzas just for you. Order now and enjoy!</p>
+        <a href="#" class="cta-btn">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Pizza Categories Section -->
+    <section class="pizza-categories">
+      <div class="container">
+        <div class="category-item">
+          <img src="{% static 'images/pizza1.jpg' %}" alt="Margherita Pizza" />
+          <h3>Margherita Pizza</h3>
+          <p>Classic cheese pizza with fresh basil and tomato sauce.</p>
+        </div>
+        <div class="category-item">
+          <img src="{% static 'images/pizza2.jpg' %}" alt="Pepperoni Pizza" />
+          <h3>Pepperoni Pizza</h3>
+          <p>Savory pepperoni pizza with mozzarella cheese.</p>
+        </div>
+        <div class="category-item">
+          <img src="{% static 'images/pizza3.jpg' %}" alt="Veggie Pizza" />
+          <h3>Veggie Pizza</h3>
+          <p>Healthy pizza with mushrooms, onions, and bell peppers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Pizza Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
