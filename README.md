@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# delivery-app
-=======
 # Food Delivery Application
 
 A Django-based food delivery application that allows users to order food online.
@@ -50,6 +47,32 @@ food_delivery/
    python manage.py runserver
    ```
 
+## Running the Project Without a Virtual Environment
+
+To run this project without a virtual environment, follow these steps:
+
+1. Install Django globally:
+   ```bash
+   pip install django
+   ```
+
+2. Install other dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Navigate to the project directory:
+   ```bash
+   cd path/to/food_delivery
+   ```
+
+4. Run the server:
+   ```bash
+   python manage.py runserver
+   ```
+
+5. Access the application at `http://127.0.0.1:8000/`.
+
 ## Contributing
 
 1. Fork the repository
@@ -61,4 +84,3 @@ food_delivery/
 ## License
 
 This project is licensed under the MIT License.
->>>>>>> 7422a7d (Initial commit after re-initializing the repository)
